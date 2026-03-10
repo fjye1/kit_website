@@ -18,7 +18,7 @@ async function loadComponent(id, htmlPath, cssPath = null) {
 }
 
 // Load header with its CSS
-loadComponent("header-container", "/components/_header.html", "/assets/css/pages/header.css");
+loadComponent("header-container", "components/_header.html", "/assets/css/pages/header.css");
 
 // Load footer with its CSS
-loadComponent("footer-container", "/components/_footer.html", "/assets/css/pages/footer.css");
+loadComponent("footer-container", "components/_footer.html", "/assets/css/pages/footer.css");
