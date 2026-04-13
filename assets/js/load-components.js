@@ -17,8 +17,11 @@ async function loadComponent(id, htmlPath, cssPath = null) {
     }
 }
 
-// Load header with its CSS
-loadComponent("header-container", "components/header.html", "assets/css/pages/header.css");
+// Check if the current page is in the 'pages' folder or the root
+const isSubPage = window.location.pathname.includes('/pages/');
+const prefix = isSubPage ? '../' : '';
 
-// Load footer with its CSS
-loadComponent("footer-container", "components/footer.html", "assets/css/pages/footer.css");
+// Use the prefix to make the paths dynamic
+// Load footer/header with its CSS
+loadComponent("header-container", `${prefix}components/header.html`, `${prefix}assets/css/pages/header.css`);
+loadComponent("footer-container", `${prefix}components/footer.html`, `${prefix}assets/css/pages/footer.css`);
