@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Libre_Baskerville";
   src:
-    url("/assets/fonts/Libre_Baskerville/LibreBaskerville-Italic.woff2")
+    url("../../fonts/Libre_Baskerville/LibreBaskerville-Italic.woff2")
       format("woff2"),
-    url("/assets/fonts/Libre_Baskerville/LibreBaskerville-Italic.woff")
+    url("../../fonts/Libre_Baskerville/LibreBaskerville-Italic.woff")
       format("woff");
   font-weight: 700;
   font-style: italic;
@@ -37,10 +37,10 @@
 }
 
 .logo-text {
-    font-family: "Libre_Baskerville", sans-serif;
-    font-size: clamp(24px, 5vw, 64px);
-    color: white;
-    margin: 0; /* reset h1 default margin */
+  font-family: "Libre_Baskerville", sans-serif;
+  font-size: clamp(24px, 5vw, 64px);
+  color: white;
+  margin: 0; /* reset h1 default margin */
 }
 
 /* Container */
